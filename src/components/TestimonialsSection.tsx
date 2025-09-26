@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            O que Nossos <span className="text-trust">Clientes Dizem</span>
+            O que Nossos <span className="text-success">Clientes Dizem</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Empresários que transformaram seus negócios com nossa tecnologia
@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
                 
                 <div className="border-t pt-4">
                   <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-primary">{testimonial.business}</div>
+                  <div className="text-sm text-accent">{testimonial.business}</div>
                 </div>
               </CardContent>
             </Card>

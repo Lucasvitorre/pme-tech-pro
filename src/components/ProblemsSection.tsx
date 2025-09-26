@@ -65,7 +65,7 @@ const ProblemsSection = () => {
           <p className="text-lg text-muted-foreground mb-4">
             <strong className="text-foreground">Estes problemas te soam familiar?</strong> Você não está sozinho.
           </p>
-          <p className="text-primary font-semibold">
+          <p className="text-accent font-semibold">
             👇 Veja como resolver de vez todos estes problemas
           </p>
         </div>

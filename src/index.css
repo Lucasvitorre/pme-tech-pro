@@ -2,59 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional IT Services Design System - Focused on Trust & Conversion */
+/* Elegant IT Services Design System - Green Details, Black & White Dominant */
 
 @layer base {
   :root {
-    /* Core Brand Colors - Professional IT Palette */
-    --background: 255 255 255;
-    --foreground: 212 27% 12%;
+    /* Core Brand Colors - Clean & Professional */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
 
-    /* Professional Blue - Primary Brand */
-    --primary: 213 84% 22%;
-    --primary-foreground: 210 40% 98%;
-    --primary-light: 213 65% 35%;
-    --primary-glow: 213 100% 85%;
+    /* Primary - Clean Black/White */
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
 
-    /* Trust Green - Success & Security */
-    --trust-green: 142 69% 25%;
-    --trust-green-foreground: 210 40% 98%;
-    --trust-green-light: 142 50% 40%;
-    --trust-green-glow: 142 100% 85%;
+    /* Secondary - Soft Grays */
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
 
-    /* Professional Grays */
-    --secondary: 210 16% 93%;
-    --secondary-foreground: 212 27% 12%;
-    --muted: 210 16% 96%;
-    --muted-foreground: 212 12% 45%;
+    /* Green Accents - Professional & Trustworthy */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 142 69% 58%;
+    --accent-glow: 142 76% 76%;
 
-    /* Accent & Highlights */
-    --accent: 213 84% 22%;
-    --accent-foreground: 210 40% 98%;
-    --whatsapp-green: 142 70% 49%;
+    /* Success Green - Same as accent for consistency */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    /* WhatsApp Green - Vibrant for CTA */
+    --whatsapp: 142 70% 49%;
+
+    /* Muted Colors */
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
 
     /* UI Elements */
     --card: 0 0% 100%;
-    --card-foreground: 212 27% 12%;
+    --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 212 27% 12%;
-    --border: 214 20% 88%;
-    --input: 214 20% 88%;
-    --ring: 213 84% 22%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --popover-foreground: 0 0% 3.9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 142 76% 36%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    /* Professional Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-trust: linear-gradient(135deg, hsl(var(--trust-green)), hsl(var(--trust-green-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--trust-green)) 100%);
+    /* Elegant Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(0 0% 20%) 50%, hsl(var(--accent)) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 100%);
 
-    /* Professional Shadows */
-    --shadow-card: 0 4px 20px -8px hsl(var(--primary) / 0.15);
-    --shadow-elevated: 0 10px 40px -10px hsl(var(--primary) / 0.2);
-    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
-    --shadow-trust: 0 8px 30px -8px hsl(var(--trust-green) / 0.2);
+    /* Elegant Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--accent) / 0.2);
+    --shadow-accent: 0 8px 30px -8px hsl(var(--accent) / 0.15);
 
     /* Animation Variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,40 +76,58 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --primary-light: 210 40% 85%;
-    --primary-glow: 210 40% 70%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --trust-green: 142 69% 35%;
-    --trust-green-foreground: 210 40% 98%;
-    --trust-green-light: 142 50% 50%;
-    --trust-green-glow: 142 100% 75%;
-    --whatsapp-green: 142 70% 49%;
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 142 69% 58%;
+    --accent-glow: 142 76% 76%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --whatsapp: 142 70% 49%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 142 76% 36%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Dark Mode Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 3.9%) 0%, hsl(0 0% 9%) 50%, hsl(var(--accent)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 3.9%) 0%, hsl(0 0% 9%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 100%);
+
+    /* Dark Mode Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.5), 0 1px 2px -1px hsl(0 0% 0% / 0.5);
+    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--accent) / 0.3);
+    --shadow-accent: 0 8px 30px -8px hsl(var(--accent) / 0.25);
+
+    --sidebar-background: 0 0% 3.9%;
+    --sidebar-foreground: 0 0% 63.9%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 14.9%;
+    --sidebar-accent-foreground: 0 0% 63.9%;
+    --sidebar-border: 0 0% 14.9%;
+    --sidebar-ring: 142 76% 36%;
   }
 }
 

@@ -22,7 +22,7 @@ const FinalCTASection = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Pronto para <span className="text-primary-glow">Transformar</span> Sua TI?
+            Pronto para <span className="text-accent-glow">Transformar</span> Sua TI?
           </h2>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90">
@@ -34,7 +34,7 @@ const FinalCTASection = () => {
           <div className="flex flex-wrap justify-center items-center gap-6 mb-10">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-center gap-2 text-white/90">
-                <benefit.icon className="h-5 w-5 text-trust-glow" />
+                <benefit.icon className="h-5 w-5 text-accent-glow" />
                 <span className="font-medium text-sm md:text-base">{benefit.text}</span>
               </div>
             ))}

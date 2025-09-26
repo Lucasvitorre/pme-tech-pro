@@ -79,8 +79,8 @@ const ServicesSection = () => {
   const ServiceCard = ({ icon: Icon, title, description, benefit }: any) => (
     <Card className="h-full hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
       <CardHeader className="text-center">
-        <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-          <Icon className="w-7 h-7 text-primary" />
+        <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <Icon className="w-7 h-7 text-accent" />
         </div>
         <CardTitle className="text-lg">{title}</CardTitle>
       </CardHeader>
@@ -88,8 +88,8 @@ const ServicesSection = () => {
         <CardDescription className="text-base leading-relaxed">
           {description}
         </CardDescription>
-        <div className="bg-trust/5 px-4 py-2 rounded-lg border border-trust/20">
-          <span className="text-sm font-semibold text-trust">
+        <div className="bg-success/5 px-4 py-2 rounded-lg border border-success/20">
+          <span className="text-sm font-semibold text-success">
             ✅ {benefit}
           </span>
         </div>
@@ -103,9 +103,9 @@ const ServicesSection = () => {
       <section className="mb-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Infraestrutura de TI que <span className="text-primary">Não Te Deixa na Mão</span>
-            </h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Infraestrutura de TI que <span className="text-accent">Não Te Deixa na Mão</span>
+          </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Base sólida e confiável para sua empresa funcionar sem surpresas
             </p>
@@ -123,9 +123,9 @@ const ServicesSection = () => {
       <section className="py-20 bg-gradient-subtle mb-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Segurança Digital <span className="text-trust">Nível Empresarial</span>
-            </h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Segurança Digital <span className="text-success">Nível Empresarial</span>
+          </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Proteja seus dados e mantenha sua empresa blindada contra ameaças
             </p>
@@ -143,9 +143,9 @@ const ServicesSection = () => {
       <section>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Tecnologia para Fazer Seu Negócio <span className="text-primary">Acelerar</span>
-            </h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Tecnologia para Fazer Seu Negócio <span className="text-accent">Acelerar</span>
+          </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Automatize processos e ganhe presença digital profissional
             </p>

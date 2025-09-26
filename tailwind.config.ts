@@ -22,8 +22,6 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          light: "hsl(var(--primary-light))",
-          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -40,6 +38,12 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          light: "hsl(var(--accent-light))",
+          glow: "hsl(var(--accent-glow))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -49,13 +53,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        trust: {
-          DEFAULT: "hsl(var(--trust-green))",
-          foreground: "hsl(var(--trust-green-foreground))",
-          light: "hsl(var(--trust-green-light))",
-          glow: "hsl(var(--trust-green-glow))",
-        },
-        whatsapp: "hsl(var(--whatsapp-green))",
+        whatsapp: "hsl(var(--whatsapp))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -73,16 +71,16 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        'gradient-primary': 'var(--gradient-primary)',
-        'gradient-trust': 'var(--gradient-trust)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-dark': 'var(--gradient-dark)',
+        'gradient-accent': 'var(--gradient-accent)',
       },
       boxShadow: {
         'card': 'var(--shadow-card)',
         'elevated': 'var(--shadow-elevated)',
         'glow': 'var(--shadow-glow)',
-        'trust': 'var(--shadow-trust)',
+        'accent': 'var(--shadow-accent)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

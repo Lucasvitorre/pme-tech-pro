@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProblemsSection from "@/components/ProblemsSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -8,6 +9,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      {/* Header with Theme Toggle */}
+      <Header />
+      
       {/* Fixed WhatsApp Button */}
       <WhatsAppButton variant="fixed" />
       
