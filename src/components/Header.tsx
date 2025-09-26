@@ -8,7 +8,7 @@ const Header = () => {
           <div className="w-8 h-8 bg-gradient-accent rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">TI</span>
           </div>
-          <span className="font-bold text-lg text-foreground">IT Solutions</span>
+          <span className="font-bold text-lg text-foreground">OLIT Solutions</span>
         </div>
         
         <ThemeToggle />
