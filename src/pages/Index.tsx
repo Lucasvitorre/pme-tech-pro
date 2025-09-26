@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProblemsSection from "@/components/ProblemsSection";
 import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import AutomationSection from "@/components/AutomationSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -24,8 +24,8 @@ const Index = () => {
       {/* Services Section */}
       <ServicesSection />
       
-      {/* Testimonials Section */}
-      <TestimonialsSection />
+      {/* Automation Section */}
+      <AutomationSection />
       
       {/* Final CTA Section */}
       <FinalCTASection />

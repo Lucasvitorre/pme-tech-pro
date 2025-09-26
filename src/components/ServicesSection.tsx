@@ -57,10 +57,10 @@ const ServicesSection = () => {
 
   const automationServices = [
     {
-      icon: Globe,
-      title: "Website Profissional",
-      description: "Sites modernos, responsivos e otimizados para conversão de clientes.",
-      benefit: "Mais credibilidade e vendas"
+      icon: Settings,
+      title: "Automação de Processos",
+      description: "Desenvolvimento de scripts e workflows para automatizar tarefas repetitivas.",
+      benefit: "Redução de trabalho manual"
     },
     {
       icon: Star,
