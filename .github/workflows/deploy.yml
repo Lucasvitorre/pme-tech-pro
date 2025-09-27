@@ -3,34 +3,32 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - main # O nome do seu branch principal
+      - main # Garante que só seja executado no branch principal
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 1. Configura o ambiente Node.js (necessário para npm)
-      - name: Setup Node.js
+      # 1. Configura Node.js (Ambiente necessário)
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use uma versão LTS estável
+          node-version: 20
 
-      # 2. Instala as dependências (npm install)
-      - name: Install Dependencies
-        run: npm install
-
-      # 3. Compila o projeto (npm run build)
-      - name: Build Project
-        run: npm run build
-
-      # 4. Publica o conteúdo da pasta 'dist' no GitHub Pages
+      # 2. Instala dependências e compila
+      - name: Install dependencies and Build
+        run: |
+          npm install
+          npm run build
+          
+      # 3. Faz o deploy da pasta 'dist' para o GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # O diretório de saída que o Vite cria
+          publish_dir: ./dist # O diretório final compilado
           force_orphan: true
-          cname: '' # Remova o CNAME se não estiver usando domínio customizado
+          cname: ''
