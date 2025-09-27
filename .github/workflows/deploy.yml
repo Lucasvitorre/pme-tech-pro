@@ -24,11 +24,12 @@ jobs:
           npm install
           npm run build
           
-      # 3. Faz o deploy da pasta 'dist' para o GitHub Pages
+      # 3. Publica o conteúdo da pasta 'dist' no GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # O diretório final compilado
+          github_token: ${{ secrets.GITHUB_TOKEN}}
           force_orphan: true
-          cname: ''
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          
