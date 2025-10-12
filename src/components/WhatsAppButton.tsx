@@ -9,7 +9,7 @@ interface WhatsAppButtonProps {
 }
 
 const WhatsAppButton = ({ 
-  phoneNumber = "5511999999999", 
+  phoneNumber = "5511921425375", 
   message = "Olá! Gostaria de saber mais sobre os serviços de TI para minha empresa.",
   className = "",
   variant = "inline"
